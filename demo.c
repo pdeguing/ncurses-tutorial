@@ -22,10 +22,11 @@ int	main(void) {
 	noecho(); // Don't echo any keypresses
 	curs_set(FALSE); // Don't display a cursor
 
-	// Global var `stdscr` is created by the call to `initscr()`
-	getmaxyx(stdscr, max_y, max_x);
 
 	while (1) {
+		// Global var `stdscr` is created by the call to `initscr()`
+		getmaxyx(stdscr, max_y, max_x);
+
 		clear(); // Clear the screen of all previous characters
 		mvprintw(y, x, "o");
 		refresh();
