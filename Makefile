@@ -2,4 +2,4 @@
 
 LDFLAGS=-lncurses
 
-all: demo
+%.o: %.c
